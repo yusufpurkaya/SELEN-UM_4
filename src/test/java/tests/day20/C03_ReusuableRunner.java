@@ -12,7 +12,7 @@ public class C03_ReusuableRunner {
 
         String path="src/test/java/resources/ulkeler.xlsx";
         String expectedData="Azerbaycan";
-        String actuelData=ReusuableMethods.hucreGetir(path,"Sayfa1",11,2).toString();
+        String actuelData= ReusuableMethodsExcel.hucreGetir(path,"Sayfa1",11,2).toString();
         Assert.assertEquals(actuelData,expectedData);
     }
 

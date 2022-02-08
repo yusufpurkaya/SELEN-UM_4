@@ -3,7 +3,6 @@ package tests.day20;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class C05_ExceliMapeYukleme {
@@ -13,13 +12,13 @@ public class C05_ExceliMapeYukleme {
         //map olarak reusuable bir method olusturalim
         String path="src/test/java/resources/ulkeler.xlsx";
         String sayfaAdi="Sayfa1";
-     ReusuableMethods.mapCreate(path,sayfaAdi);
-        System.out.println(ReusuableMethods.mapCreate(path,sayfaAdi));
+     ReusuableMethodsExcel.mapCreate(path,sayfaAdi);
+        System.out.println(ReusuableMethodsExcel.mapCreate(path,sayfaAdi));
 
         // olusturdugumuz map i kullanarak ulke ismi Turkey in bilgilerini yazdiriniz
 
 
-    Map<String,String> ulkelerMap=ReusuableMethods.mapCreate(path,sayfaAdi);
+    Map<String,String> ulkelerMap= ReusuableMethodsExcel.mapCreate(path,sayfaAdi);
     System.out.println(ulkelerMap.get("Turkey"));
     // listede Netherlands oldugunu test edin
     Assert.assertTrue(ulkelerMap.containsKey("Netherlands"));

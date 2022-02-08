@@ -11,7 +11,7 @@ public class C02PageIlkClass {
 // POM de farkli class lara farkli sekilde ulasilmasi benimsenmistir
     // Driver class icin static yontemi kullaniyoruz
     // Pages class lari icinse obje uzerinden kullanimi tercih edilmistir
-    @Test
+    @Test(groups = {"miniregration,smoke"})
     public void test01(){
         // amazona gidelim
 

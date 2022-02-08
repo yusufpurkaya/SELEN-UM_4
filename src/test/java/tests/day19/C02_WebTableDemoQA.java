@@ -19,7 +19,7 @@ public class C02_WebTableDemoQA {
     // 10. Page sayfasinda bir method olusturun,
     //     Test sayfasindan satir ve sutun sayisini girdigimde bana datayi yazdirsin
 
-    @Test
+    @Test(groups = {"smoke,regression"})
     public void demoqaTest(){
         //  1. “https://demoqa.com/webtables” sayfasina gidin
 

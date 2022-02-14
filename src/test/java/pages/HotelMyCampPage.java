@@ -10,8 +10,22 @@ public class HotelMyCampPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    // 1. yol  busekilde yorum satirlari ile belirtmek
     @FindBy(xpath = "(//a[@class='nav-link'])[7]")
     public WebElement ilklogIn;
+
+    // 2. yol  busekilde yorum satirlari ile belirtmek
+    @FindBy(xpath = "(//a[@class='nav-link'])[7]")
+    public WebElement US010ilklogin;
+
+    // 3. yol herkes icin gerekli olanlari 1. si ile
+    // kararlastirdigimiz ozel locate icin 2. yol
+
+    @FindBy(className = "username username-hide-on-mobile")
+    public WebElement US010CreateAnAccountButonu;
+
+
+
     @FindBy(id = "UserName")
     public WebElement username;
     @FindBy(id = "Password")
